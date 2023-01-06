@@ -14,3 +14,11 @@ Quick and dirty code to decode your LastPass vault.
  It's really quick and dirty right now, I'm working on making it cleaner.
 
  .\Decode-LPVault.ps1 | Out-File LPVault.txt
+
+ You can get the result as an object
+
+ $vaultObj = .\Decode-LPVault.ps1 -objOut
+
+ $vaultObj.VaultAsString is the text that was output by the original version
+
+ $vaultObj.accounts.account.URLDecoded will show you all the URLs in your vault associated with logins.
