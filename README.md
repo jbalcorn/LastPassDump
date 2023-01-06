@@ -12,3 +12,5 @@ Quick and dirty code to decode your LastPass vault.
  Then run this powershell to get a text output of your accounts in the vault and any decodeable values.
  
  It's really quick and dirty right now, I'm working on making it cleaner.
+
+ .\Decode-LPVault.ps1 | Out-File LPVault.txt
